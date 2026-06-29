@@ -1,0 +1,54 @@
+<section class="about-us">
+  <div class="wrap">
+    <span class="eyebrow">About Us</span>
+
+    <h2>Building the Home of Eagles Fans in Switzerland.</h2>
+
+    <div class="about-grid">
+
+      <div class="about-text">
+        <p>
+          The Philadelphia Eagles Switzerland Fan Club was created with one simple goal:
+          bring Eagles fans across Switzerland together.
+        </p>
+
+        <p>
+          Whether you've been following the Birds your whole life, discovered the NFL
+          recently, or moved here from Philadelphia, you already have something in common
+          with us. Game days are always better when they're shared.
+        </p>
+
+        <p>
+          We're building a community where members can meet at watch parties, travel to
+          games together, discuss the season, and help grow the NFL community throughout
+          Switzerland.
+        </p>
+      </div>
+
+      <div class="about-card">
+
+        <div class="stat">
+          <span class="number">🇨🇭</span>
+          <span class="label">Based in Zürich</span>
+        </div>
+
+        <div class="stat">
+          <span class="number">🦅</span>
+          <span class="label">Open to all Eagles fans</span>
+        </div>
+
+        <div class="stat">
+          <span class="number">🍻</span>
+          <span class="label">Watch parties & events</span>
+        </div>
+
+        <div class="stat">
+          <span class="number">✈️</span>
+          <span class="label">Trips to NFL games</span>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
