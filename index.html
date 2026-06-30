@@ -4,10 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Philadelphia Eagles Switzerland Fan Club</title>
-<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
-<link rel="icon" href="assets/favicon.ico">
-<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root{
     --midnight-900:#04302C;
@@ -76,17 +75,6 @@
     padding-bottom:56px;
   }
   .hero-top .eyebrow{ color:var(--silver); }
-
-  .hero-brand{
-    display:flex;
-    align-items:center;
-    gap:12px;
-  }
-  .club-logo{
-    height:34px;
-    width:auto;
-    display:block;
-  }
 
   .swiss-badge{
     width:30px; height:30px;
@@ -180,42 +168,6 @@
   .story .pull em{
     font-style:normal;
     color:var(--swiss-red);
-  }
-
-  /* ---------- ABOUT US ---------- */
-  .about{ background:var(--snow); border-top:1px solid var(--line-on-light); }
-  .about p{
-    max-width:620px;
-    font-size:1.05rem;
-    color:#27332f;
-  }
-  .about-grid{
-    display:grid;
-    grid-template-columns:repeat(3, 1fr);
-    gap:28px;
-    margin-top:42px;
-  }
-  .about-card{
-    border-top:2px solid var(--swiss-red);
-    padding-top:16px;
-  }
-  .about-card label{
-    display:block;
-    font-family:var(--font-mono);
-    font-size:0.72rem;
-    letter-spacing:0.1em;
-    text-transform:uppercase;
-    color:var(--silver-dim);
-    margin-bottom:8px;
-  }
-  .about-card p{
-    margin:0;
-    font-size:0.96rem;
-    color:#27332f;
-    max-width:none;
-  }
-  @media (max-width:720px){
-    .about-grid{ grid-template-columns:1fr; gap:26px; }
   }
 
   /* ---------- WHERE WE FLY ---------- */
@@ -376,7 +328,6 @@
     .perforation::before{ left:-30px; }
     .perforation::after{ right:-30px; }
     .pass-grid{ grid-template-columns:1fr 1fr; gap:18px 14px; }
-    .club-logo{ height:28px; }
   }
 </style>
 </head>
@@ -385,10 +336,7 @@
 <header class="hero">
   <div class="wrap">
     <div class="hero-top">
-      <div class="hero-brand">
-        <img class="club-logo" src="assets/logo.png" alt="Philadelphia Eagles Switzerland Fan Club logo">
-        <span class="eyebrow">Route PHL&nbsp;&rarr;&nbsp;ZRH&nbsp;&middot;&nbsp;Est. 2026</span>
-      </div>
+      <span class="eyebrow">Route PHL&nbsp;&rarr;&nbsp;ZRH&nbsp;&middot;&nbsp;Est. 2026</span>
       <div class="swiss-badge" role="img" aria-label="Swiss cross"></div>
     </div>
 
@@ -417,28 +365,6 @@
     <h2>From Philly Sundays<br>to Swiss Sundays.</h2>
     <p>We're a family who fell for the Eagles while living in Switzerland — chasing a stream at odd hours, doing time-zone math for kickoff, learning the chants a season at a time. Somewhere between the snap counts and the early alarms, we figured we couldn't be the only ones doing this alone. So we started a club: a place for any Eagles fan in Switzerland, Swiss, American, or somewhere in between, to find each other, watch together, and make a few thousand miles feel a little smaller on game day.</p>
     <p class="pull">Go Birds. <em>Wherever you're watching from.</em></p>
-  </div>
-</section>
-
-<section class="about">
-  <div class="wrap">
-    <span class="eyebrow">About us</span>
-    <h2>Who we are.</h2>
-    <p>The Philadelphia Eagles Switzerland Fan Club is a volunteer-run group for Eagles fans living in or visiting Switzerland. No membership fees, no front office — just a group chat, a few watch parties a season, and an excuse to wear green on a Sunday (or Monday morning, depending on kickoff).</p>
-    <div class="about-grid">
-      <div class="about-card">
-        <label>Who's behind it</label>
-        <p>Founded by a small group of Eagles fans based in Zürich, now run by a handful of volunteer organizers across the country.</p>
-      </div>
-      <div class="about-card">
-        <label>What we do</label>
-        <p>Watch parties for primetime and playoff games, a group chat for every other Sunday, and the occasional meetup beyond game day.</p>
-      </div>
-      <div class="about-card">
-        <label>Who can join</label>
-        <p>Any Eagles fan in Switzerland — Swiss, American, or anywhere in between. New to the team is welcome too.</p>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -534,5 +460,3 @@
     <p class="foot-bottom">Independent fan club run by fans, for fans — based in Zürich, open to members across Switzerland. Not affiliated with or endorsed by the Philadelphia Eagles or the NFL.</p>
   </div>
 </footer>
-</body>
-</html>
