@@ -321,6 +321,64 @@
   }
   .watch .foot-note a{ color:var(--swiss-red); font-weight:600; }
 
+  /* ---------- UPCOMING / PAST EVENTS ---------- */
+  .pending{
+    margin-top:36px;
+    border:1.5px dashed var(--midnight-700);
+    padding:34px 30px;
+    display:grid;
+    grid-template-columns:auto 1fr;
+    gap:26px;
+    align-items:center;
+    background:rgba(0,76,84,0.04);
+  }
+  .pending .tbd{
+    font-family:var(--font-display);
+    font-size:clamp(2.4rem, 7vw, 4rem);
+    line-height:1;
+    color:var(--swiss-red);
+    letter-spacing:0.02em;
+  }
+  .pending h3{
+    font-family:var(--font-display);
+    text-transform:uppercase;
+    font-weight:400;
+    font-size:clamp(1.2rem, 2.8vw, 1.6rem);
+    margin:0 0 8px;
+    line-height:1.1;
+  }
+  .pending p{ margin:0; color:#3a4742; font-size:0.98rem; max-width:560px; }
+  .pending p a{ color:var(--swiss-red); font-weight:600; }
+  .past-head{ margin-top:56px; display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:14px; }
+  .past-head h3{
+    font-family:var(--font-display);
+    text-transform:uppercase;
+    font-weight:400;
+    font-size:clamp(1.3rem, 3vw, 1.8rem);
+    margin:12px 0 0;
+    line-height:1.1;
+  }
+  .live-tag.over{ color:#5b6863; border-color:#5b6863; }
+  .live-tag.over::before{ background:#5b6863; animation:none; }
+  .matchup.past{ margin-top:22px; }
+  .matchup.past .team-disc{ filter:grayscale(0.35); }
+  .past-stamp{
+    position:absolute;
+    top:18px; right:18px;
+    font-family:var(--font-mono);
+    font-size:0.68rem;
+    letter-spacing:0.16em;
+    text-transform:uppercase;
+    color:var(--snow);
+    background:var(--swiss-red);
+    padding:6px 10px;
+    transform:rotate(3deg);
+    z-index:1;
+  }
+  @media (max-width:640px){
+    .pending{ grid-template-columns:1fr; gap:14px; padding:26px 20px; }
+  }
+
   .story{ border-top:1px solid var(--line-on-light); }
 
   /* ---------- STORY ---------- */
@@ -559,13 +617,30 @@
   <div class="wrap">
     <div class="head">
       <div>
-        <span class="eyebrow">First watch party</span>
-        <h2>Birds vs. Big Blue.<br><em>Live in Zürich.</em></h2>
+        <span class="eyebrow">Club events</span>
+        <h2>Next watch party.<br><em>Coming soon.</em></h2>
       </div>
-      <span class="live-tag">Sun 08 Nov 2026</span>
+      <span class="live-tag">Future events pending</span>
     </div>
 
-    <div class="matchup">
+    <div class="pending">
+      <div class="tbd" aria-hidden="true">TBA</div>
+      <div>
+        <h3>New events are on the way</h3>
+        <p>We're lining up our next game-day get-together in Zürich. <a href="#join">Join the club</a> to be the first to hear when the date and venue are set, or reach out any time at <a href="mailto:swisseaglesfans@gmail.com">swisseaglesfans@gmail.com</a>.</p>
+      </div>
+    </div>
+
+    <div class="past-head">
+      <div>
+        <span class="eyebrow">Past event &middot; Our first watch party</span>
+        <h3>Birds vs. Big Blue &mdash; Live in Zürich</h3>
+      </div>
+      <span class="live-tag over">Event over</span>
+    </div>
+
+    <div class="matchup past">
+      <span class="past-stamp">Full time</span>
       <div class="teams">
         <div class="team">
           <div class="team-disc"><img src="assets/logo-eagles.png" alt="Philadelphia Eagles logo" width="500" height="500"></div>
@@ -578,13 +653,6 @@
           <div class="team-name">Giants</div>
           <div class="team-city">New York</div>
         </div>
-      </div>
-
-      <div class="countdown" id="countdown" hidden aria-label="Countdown to the watch party">
-        <div class="unit"><span class="num" data-cd="d">00</span><span class="lbl">Days</span></div>
-        <div class="unit"><span class="num" data-cd="h">00</span><span class="lbl">Hours</span></div>
-        <div class="unit"><span class="num" data-cd="m">00</span><span class="lbl">Mins</span></div>
-        <div class="unit"><span class="num" data-cd="s">00</span><span class="lbl">Secs</span></div>
       </div>
 
       <div class="watch-details">
@@ -606,7 +674,7 @@
       </div>
     </div>
 
-    <p class="foot-note">Our first ever club watch party — come in green, bring a friend, and let's make some noise. <a href="#join">Join the club</a> to get game-day updates, or reach out any time at <a href="mailto:swisseaglesfans@gmail.com">swisseaglesfans@gmail.com</a>.</p>
+    <p class="foot-note">Thanks to everyone who came out in green to Nelson Pub for our first ever club watch party — here's to many more.</p>
   </div>
 </section>
 
