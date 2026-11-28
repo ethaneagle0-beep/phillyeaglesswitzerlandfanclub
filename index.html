@@ -3,7 +3,43 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Philadelphia Eagles Switzerland Fan Club</title>
+<title>Eagles vs. Colts Watch Party in Zürich | Philadelphia Eagles Switzerland Fan Club</title>
+<meta name="description" content="Watch the Philadelphia Eagles vs. Indianapolis Colts on Sunday, December 13, 2026, at 19:00 CET at Nelson Pub in Zürich, Switzerland. Join the Swiss Eagles fan club for game day.">
+<link rel="canonical" href="https://swisseaglesfans.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Eagles vs. Colts Watch Party in Zürich">
+<meta property="og:description" content="Sunday, December 13, 2026 · 19:00 CET · Nelson Pub, Zürich. Watch the game with the Philadelphia Eagles Switzerland Fan Club.">
+<meta property="og:url" content="https://swisseaglesfans.com/">
+<meta property="og:image" content="https://swisseaglesfans.com/assets/logo.png">
+<meta property="og:image:alt" content="Philadelphia Eagles Switzerland Fan Club logo">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "Eagles vs. Colts Watch Party in Zürich",
+  "description": "Watch the Philadelphia Eagles vs. Indianapolis Colts with the Philadelphia Eagles Switzerland Fan Club at Nelson Pub in Zürich.",
+  "url": "https://swisseaglesfans.com/#eagles-colts",
+  "startDate": "2026-12-13T19:00:00+01:00",
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "location": {
+    "@type": "Place",
+    "name": "Nelson Pub",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Beatengasse 11",
+      "postalCode": "8001",
+      "addressLocality": "Zürich",
+      "addressCountry": "CH"
+    }
+  },
+  "organizer": {
+    "@type": "Organization",
+    "name": "Philadelphia Eagles Switzerland Fan Club",
+    "url": "https://swisseaglesfans.com/"
+  }
+}
+</script>
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
 <link rel="icon" href="assets/favicon.ico">
@@ -265,7 +301,7 @@
   .watch-details > div{ padding:24px 0 30px; }
   .watch-details > div + div{ padding-left:22px; border-left:1px solid var(--line-on-dark); }
   .watch-details > div:not(:last-child){ padding-right:22px; }
-  .watch-details label{
+  .watch-details label, .watch-details .detail-label{
     display:block;
     font-family:var(--font-mono);
     font-size:0.68rem;
@@ -322,33 +358,9 @@
   .watch .foot-note a{ color:var(--swiss-red); font-weight:600; }
 
   /* ---------- UPCOMING / PAST EVENTS ---------- */
-  .pending{
-    margin-top:36px;
-    border:1.5px dashed var(--midnight-700);
-    padding:34px 30px;
-    display:grid;
-    grid-template-columns:auto 1fr;
-    gap:26px;
-    align-items:center;
-    background:rgba(0,76,84,0.04);
+  .matchup.colts::after{
+    background:linear-gradient(90deg, var(--midnight-700) 0 50%, #002C5F 50% 100%);
   }
-  .pending .tbd{
-    font-family:var(--font-display);
-    font-size:clamp(2.4rem, 7vw, 4rem);
-    line-height:1;
-    color:var(--swiss-red);
-    letter-spacing:0.02em;
-  }
-  .pending h3{
-    font-family:var(--font-display);
-    text-transform:uppercase;
-    font-weight:400;
-    font-size:clamp(1.2rem, 2.8vw, 1.6rem);
-    margin:0 0 8px;
-    line-height:1.1;
-  }
-  .pending p{ margin:0; color:#3a4742; font-size:0.98rem; max-width:560px; }
-  .pending p a{ color:var(--swiss-red); font-weight:600; }
   .past-head{ margin-top:56px; display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:14px; }
   .past-head h3{
     font-family:var(--font-display);
@@ -375,10 +387,6 @@
     transform:rotate(3deg);
     z-index:1;
   }
-  @media (max-width:640px){
-    .pending{ grid-template-columns:1fr; gap:14px; padding:26px 20px; }
-  }
-
   .story{ border-top:1px solid var(--line-on-light); }
 
   /* ---------- STORY ---------- */
@@ -615,21 +623,50 @@
 
 <section class="watch" id="watch-party">
   <div class="wrap">
-    <div class="head">
+    <div class="head" id="eagles-colts">
       <div>
-        <span class="eyebrow">Club events</span>
-        <h2>Next watch party.<br><em>Coming soon.</em></h2>
+        <span class="eyebrow">Next watch party &middot; Zürich</span>
+        <h2>Philadelphia Eagles<br><em>vs. Indianapolis Colts</em></h2>
       </div>
-      <span class="live-tag">Future events pending</span>
+      <span class="live-tag">Upcoming event</span>
     </div>
 
-    <div class="pending">
-      <div class="tbd" aria-hidden="true">TBA</div>
-      <div>
-        <h3>New events are on the way</h3>
-        <p>We're lining up our next game-day get-together in Zürich. <a href="#join">Join the club</a> to be the first to hear when the date and venue are set, or reach out any time at <a href="mailto:swisseaglesfans@gmail.com">swisseaglesfans@gmail.com</a>.</p>
+    <div class="matchup colts">
+      <div class="teams">
+        <div class="team">
+          <div class="team-disc"><img src="assets/logo-eagles.png" alt="" width="500" height="500"></div>
+          <div class="team-name">Eagles</div>
+          <div class="team-city">Philadelphia</div>
+        </div>
+        <div class="versus" aria-label="versus">VS</div>
+        <div class="team">
+          <div class="team-disc"><img src="assets/logo-colts.png" alt="" width="500" height="500"></div>
+          <div class="team-name">Colts</div>
+          <div class="team-city">Indianapolis</div>
+        </div>
+      </div>
+
+      <div class="watch-details">
+        <div>
+          <span class="detail-label">Date</span>
+          <div class="val"><time datetime="2026-12-13">Sunday, 13 Dec</time></div>
+          <div class="note">2026</div>
+        </div>
+        <div>
+          <span class="detail-label">Time</span>
+          <div class="val"><time datetime="2026-12-13T19:00:00+01:00">19:00</time></div>
+          <div class="note">Swiss time (CET)</div>
+        </div>
+        <div>
+          <span class="detail-label">Venue</span>
+          <div class="val">Nelson Pub</div>
+          <div class="note">Beatengasse 11, 8001 Zürich</div>
+          <a class="note" href="https://www.google.com/maps/search/?api=1&amp;query=Nelson+Pub+Beatengasse+11+Z%C3%BCrich" target="_blank" rel="noopener">Get directions &rarr;</a>
+        </div>
       </div>
     </div>
+
+    <p class="foot-note">Come watch the game with us. <a href="#join">Sign up to join the club</a>, or email <a href="mailto:swisseaglesfans@gmail.com">swisseaglesfans@gmail.com</a> with watch party questions.</p>
 
     <div class="past-head">
       <div>
